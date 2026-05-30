@@ -122,6 +122,7 @@
       background: var(--khaki);
       color: var(--dark);
       font-weight: 900;
+      transition: transform 0.2s ease;
     }
 
     .button:hover {
@@ -374,7 +375,6 @@
       </div>
 
       <div class="hero-svg">
-        <!-- Главная комикс-сцена КПП -->
         <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg">
           <rect width="420" height="300" fill="#f6e7b8"/>
           <path d="M0 0H420V150H0Z" fill="#8fd3ff"/>
@@ -392,20 +392,10 @@
           <g stroke="#1f1f1f" stroke-width="5" stroke-linecap="round">
             <rect x="245" y="148" width="18" height="60" fill="#30382b"/>
             <line x1="255" y1="151" x2="370" y2="110" stroke="#e23b2e" stroke-width="13"/>
-            <line x1="280" y1="142" x2="300" y2="135" stroke="#fff" stroke-width="9"/>
-            <line x1="325" y1="126" x2="345" y2="119" stroke="#fff" stroke-width="9"/>
-          </g>
-          <g stroke="#1f1f1f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="285" cy="126" r="14" fill="#f0c28b"/>
-            <path d="M270 116Q285 98 300 116Z" fill="#324b2f"/>
-            <rect x="270" y="140" width="31" height="48" rx="8" fill="#31472f"/>
-            <line x1="277" y1="188" x2="270" y2="224"/>
-            <line x1="294" y1="188" x2="304" y2="224"/>
           </g>
           <path d="M245 35H365Q383 35 383 53V82Q383 100 365 100H305L282 122L290 100H245Q227 100 227 82V53Q227 35 245 35Z"
                 fill="#fffaf0" stroke="#1f1f1f" stroke-width="4"/>
-          <text x="305" y="58" text-anchor="middle" font-family="Arial" font-size="14" font-weight="800">Курсант!</text>
-          <text x="305" y="78" text-anchor="middle" font-family="Arial" font-size="13">А почему не бегом?</text>
+          <text x="305" y="63" text-anchor="middle" font-family="Arial" font-size="14" font-weight="800">КПП помнит всё</text>
         </svg>
       </div>
     </div>
@@ -415,18 +405,34 @@
     <section id="about" class="card">
       <h2 class="section-title">Коротко о главном</h2>
       <p class="section-lead">
-        Этот сайт — не официальный портал, а тёплая страница памяти о Ярославском высшем военном финансовом училище имени генерала армии А. В. Хрулёва.
+        Этот сайт — тёплая страница памяти о Ярославском высшем военном финансовом училище имени генерала армии А. В. Хрулёва.
         Здесь не проверяют форму одежды, не вызывают к начальнику курса и не спрашивают конспект. Здесь просто вспоминают.
       </p>
     </section>
 
     <section id="features">
       <h2 class="section-title">Почему это помнится до сих пор</h2>
+
       <div class="features">
-        <article class="feature"><h3>КПП</h3><p>Вход в новую жизнь. Иногда — выход в увольнение, если звёзды сошлись.</p></article>
-        <article class="feature"><h3>Плац</h3><p>Место, где шаг становился чеканным, а асфальт — почти родным.</p></article>
-        <article class="feature"><h3>Товарищи</h3><p>Люди, с которыми можно не видеться годами, но всё равно понимать с полуслова.</p></article>
-        <article class="feature"><h3>Финансы</h3><p>Дебет, кредит и воинская дисциплина. Редкое сочетание, зато запоминается навсегда.</p></article>
+        <article class="feature">
+          <h3>КПП</h3>
+          <p>Вход в новую жизнь. Иногда — выход в увольнение, если звёзды сошлись.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Плац</h3>
+          <p>Место, где шаг становился чеканным, а асфальт — почти родным.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Товарищи</h3>
+          <p>Люди, с которыми можно не видеться годами, но всё равно понимать с полуслова.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Финансы</h3>
+          <p>Дебет, кредит и воинская дисциплина. Редкое сочетание, зато запоминается навсегда.</p>
+        </article>
       </div>
     </section>
 
@@ -438,16 +444,33 @@
       </p>
 
       <div class="timeline">
-        <div class="timeline-item"><div class="year">1938</div><p>Начало подготовки специалистов для военно-финансовой службы.</p></div>
-        <div class="timeline-item"><div class="year">1957</div><p>Училище передислоцировано в Ярославль.</p></div>
-        <div class="timeline-item"><div class="year">1974</div><p>Преобразовано в Ярославское высшее военное финансовое училище имени генерала армии А. В. Хрулёва.</p></div>
-        <div class="timeline-item"><div class="year">2010</div><p>Институт был расформирован, но выпускники остались. А значит, история продолжается.</p></div>
+        <div class="timeline-item">
+          <div class="year">1938</div>
+          <p>Начало подготовки специалистов для военно-финансовой службы.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="year">1957</div>
+          <p>Училище передислоцировано в Ярославль.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="year">1974</div>
+          <p>Преобразовано в Ярославское высшее военное финансовое училище имени генерала армии А. В. Хрулёва.</p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="year">2010</div>
+          <p>Институт был расформирован, но выпускники остались. А значит, история продолжается.</p>
+        </div>
       </div>
     </section>
 
     <section id="gallery">
-      <h2 class="section-title">Галерея в стиле комикса</h2>
-      <p class="section-lead">Все изображения встроены прямо в HTML как SVG. Отдельная папка с фото не нужна.</p>
+      <h2 class="section-title">Галерея воспоминаний</h2>
+      <p class="section-lead">
+        Несколько рисованных сцен о тех местах и моментах, которые выпускники узнают без лишних пояснений.
+      </p>
 
       <div class="gallery">
         <figure>
@@ -522,9 +545,6 @@
             </g>
             <rect x="145" y="72" width="130" height="30" rx="5" fill="#fffaf0" stroke="#1f1f1f" stroke-width="3"/>
             <text x="210" y="93" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900">УЧЕБНЫЙ КОРПУС</text>
-            <path d="M42 45H150Q165 45 165 60V84Q165 99 150 99H92L70 120L78 99H42Q27 99 27 84V60Q27 45 42 45Z"
-                  fill="#fffaf0" stroke="#1f1f1f" stroke-width="3"/>
-            <text x="96" y="68" text-anchor="middle" font-family="Arial" font-size="13" font-weight="800">Конспект есть?</text>
           </svg>
           <figcaption>Учебный корпус</figcaption>
         </figure>
@@ -549,12 +569,6 @@
               <rect x="248" y="182" width="30" height="28"/>
               <rect x="298" y="182" width="30" height="28"/>
             </g>
-            <g stroke="#1f1f1f" stroke-width="3" stroke-linecap="round">
-              <circle cx="205" cy="220" r="10" fill="#f0c28b"/>
-              <rect x="197" y="231" width="16" height="28" fill="#31472f"/>
-              <line x1="197" y1="240" x2="182" y2="250"/>
-              <line x1="213" y1="240" x2="228" y2="250"/>
-            </g>
             <path d="M248 38H378Q393 38 393 54V78Q393 94 378 94H300L278 116L286 94H248Q233 94 233 78V54Q233 38 248 38Z"
                   fill="#fffaf0" stroke="#1f1f1f" stroke-width="3"/>
             <text x="313" y="62" text-anchor="middle" font-family="Arial" font-size="13" font-weight="800">Подъём!</text>
@@ -574,23 +588,19 @@
               <circle cx="95" cy="205" r="13" fill="#f0c28b"/>
               <path d="M80 195Q95 178 110 195Z" fill="#31472f"/>
               <rect x="84" y="219" width="22" height="40" rx="5" fill="#31472f"/>
-              <rect x="115" y="222" width="28" height="18" fill="#fffaf0"/>
+
               <circle cx="175" cy="205" r="13" fill="#f0c28b"/>
               <path d="M160 195Q175 178 190 195Z" fill="#31472f"/>
               <rect x="164" y="219" width="22" height="40" rx="5" fill="#31472f"/>
-              <rect x="195" y="222" width="28" height="18" fill="#fffaf0"/>
+
               <circle cx="255" cy="205" r="13" fill="#f0c28b"/>
               <path d="M240 195Q255 178 270 195Z" fill="#31472f"/>
               <rect x="244" y="219" width="22" height="40" rx="5" fill="#31472f"/>
-              <rect x="275" y="222" width="28" height="18" fill="#fffaf0"/>
+
               <circle cx="335" cy="205" r="13" fill="#f0c28b"/>
               <path d="M320 195Q335 178 350 195Z" fill="#31472f"/>
               <rect x="324" y="219" width="22" height="40" rx="5" fill="#31472f"/>
             </g>
-            <path d="M36 35H176Q192 35 192 52V76Q192 93 176 93H112L88 116L97 93H36Q20 93 20 76V52Q20 35 36 35Z"
-                  fill="#fffaf0" stroke="#1f1f1f" stroke-width="3"/>
-            <text x="106" y="60" text-anchor="middle" font-family="Arial" font-size="13" font-weight="800">Теперь можно?</text>
-            <text x="106" y="77" text-anchor="middle" font-family="Arial" font-size="12">Нет, сначала фото!</text>
           </svg>
           <figcaption>Выпускники</figcaption>
         </figure>
